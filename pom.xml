@@ -6,7 +6,7 @@
 	<groupId>fr.nantes.ustephan</groupId>
 	<artifactId>TestSpringMVC</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-${bambooDatabase.url}</version>
+	<version>1.0-${bambooDatabase}</version>
 	<name>TestSpringMVC</name>
 	<url>http://maven.apache.org</url>
 
