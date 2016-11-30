@@ -6,14 +6,21 @@
 	<groupId>fr.nantes.ustephan</groupId>
 	<artifactId>TestSpringMVC</artifactId>
 	<packaging>war</packaging>
-	<version>1.0-${bambooDatabase}</version>
+	<version>1.0</version>
 	<name>TestSpringMVC</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
+		<db.driver>com.mysql.cj.jdbc.Driver </db.driver>
+		<db.url>jdbc:mysql://localhost:3306/worldTest </db.url>
+		<db.username> root</db.username>
+		<db.password>root </db.password>
+		<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
+		<hibernate.show_sql>true</hibernate.show_sql>
+		<entitymanager.packages.to.scan>fr.nantes.ustephan.web.entity</entitymanager.packages.to.scan>
 	</properties>
-
+	
 	<build>
 		<plugins>
 			<plugin>
