@@ -12,13 +12,10 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>		
-		<db.driver>com.mysql.cj.jdbc.Driver </db.driver>
-		<db.url>jdbc:mysql://localhost:3306/worldTest </db.url>
-		<db.username> root</db.username>
-		<db.password>root </db.password>
-		<hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
-		<hibernate.show_sql>true</hibernate.show_sql>
-		<entitymanager.packages.to.scan>fr.nantes.ustephan.web.entity</entitymanager.packages.to.scan>
+		<db.driver>${PG_DRIVER}</db.driver>
+		<db.url>${PG_URL}</db.url>
+		<db.username>${PG_USERNAME}</db.username>
+		<db.password>${PG_PASSWORD}</db.password>		
 	</properties>
 	
 	<build>
@@ -36,6 +33,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		 <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>     
 	</build>
 
 	<dependencies>
