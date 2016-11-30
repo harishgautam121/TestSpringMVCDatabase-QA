@@ -12,6 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<database.url>jdbc:mysql://localhost:3306/worldTest</database.url>
 	</properties>
 
 	<build>
